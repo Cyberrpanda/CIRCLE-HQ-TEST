@@ -12,32 +12,48 @@ body {
   box-sizing: border-box;
 }
 
-.menu{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 6px;
+.menu-grid__row{
+  max-width: 140rem;
+  padding: 5px;
+  margin: 0 auto;
+  
 }
 
-.menu-section1{
-  display: flex;
-  flex-direction: column;
-  height: 6rem;
-  width: 6rem;
-  border-right: 2px solid grey;
-  
-  
+.menu-grid__row::after{
+  content: "";
+  display: table;
+  clear: both;
 }
+
+.menu-grid__row-1{
+  width: calc((35% - 2 * 6rem)/3);
+  float: left;
+  height: 100rem;
+}
+
+.menu-grid__row-1 h1{
+  padding-top: 9.5px;
+}
+
+.menu-grid__row-2{
+  width: calc(2  ((100% - 2 * 6rem)/3) + 6rem);
+  padding: 5px;
+  float: right;
+} 
+
+.menu-grid__row:not(:last-child){
+  margin-right: 6rem;
+}
+
+.menu-grid__annex{
+ margin-top: 10px;
+ padding-left: 15px;
+}
+
 
 .menu-logo{
   width: 4rem;
-  position: static;
-  top: 1rem;
-  left: 0.8rem;
+  display: block;
   
 }
 
-.svg-style {
-  width: 5rem;
-  
-}
