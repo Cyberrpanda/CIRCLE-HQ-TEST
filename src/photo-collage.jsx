@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export default function Collage({ stroke = "currentColor", width = "24", height = "24" }) {
     return (
         <svg  
-        xmlns="http://www.w3.org/2000/svg"
+         xmlns="http://www.w3.org/2000/svg"
          width="58" 
          height="30" 
          viewBox="0 0 48 48" 
