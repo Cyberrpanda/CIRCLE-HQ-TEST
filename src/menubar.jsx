@@ -1,4 +1,5 @@
 import "./index.css";
+import Header from "./header";
 import Collage from "./photo-collage";
 import DashLine from "./dashline";
 import Inbox from "./inbox";
@@ -8,7 +9,8 @@ import DoubleBio from "./two-bios";
 import FileCopy from "./file-copy";
 import File from "./file";
 import Settings from "./settings";
-import Message from "./messages";
+import Attention from "./attention";
+import Leave from "./leave";
 
 export default function Menu() {
   return (
@@ -22,29 +24,23 @@ export default function Menu() {
           />
           <div className="menu-grid__annex">
             <DashLine className="svg-icon" />
-            <Collage className="svg-icon" />
+            <Collage className="svg-icon"/>
             <Inbox className="svg-icon" />
             <Speaker className="svg-icon" />
             <Fblock className="svg-icon" />
-            <DoubleBio className="svg-icon" height="30"/>
+            <DoubleBio className="svg-icon" />
             <FileCopy className="svg-icon" />
             <File className="svg-icon" />
             <Settings className="svg-icon" />
+            <Attention className="svg-icon exempt"  />
+            <Leave className="svg-icon exempt" />
+
           </div>
         </div>
         
-        <div className="menu-grid__row-1 menu_grid__row-1x">
-          <h1>Shared Inbox</h1>
-          <Message/>
-        </div>
+        <Header/>
         
         
-        <div className="menu-grid__row-2">
-          <div>
-            <h3>Abubakar Ismail</h3>
-            <h4>Administrator</h4>
-          </div>
-        </div>
       </div>
     </div>
   );

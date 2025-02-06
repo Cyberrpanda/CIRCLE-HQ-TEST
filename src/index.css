@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* Left sidebar */
+
 .menu-grid__row-1:first-child {
   width: 80px;
   height: 100vh;
@@ -33,16 +33,45 @@ body {
 }
 
 .menu-grid__row-1{
+
+}
+
+.exempt {
   
 }
 
-.menu_grid__row-1x{
-  border-bottom: 1px solid #e5e7;
+.menu-2{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
 }
 
-/* Center section */
-.menu-grid__row-1:nth-child(2) {
+.menu-2 h1 {
   padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+.menu-2__1{
+  display: flex;
+  gap: 5rem;
+  padding: 1.6rem 2.4rem;
+  text-align: right;
+  justify-content: end;
+}
+
+.menu-2__1 h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  font-weight: 500;
+}
+
+.menu-2__1 h4 {
+  font-size: 1.2rem;
+  color: #6B7280;
+  font-weight: normal;
 }
 
 .menu-grid__row-1 h1 {
@@ -51,8 +80,10 @@ body {
   padding-bottom: ;
 }
 
-/* Right section */
+
 .menu-grid__row-2 {
+  display: flex;
+  gap: 2rem;
   padding: 1.6rem 2.4rem;
   text-align: right;
 }
@@ -94,7 +125,7 @@ body {
 }
 
 .message-hud{
-  
+
 }
 
 .btn {
@@ -102,7 +133,9 @@ body {
   display: inline-block;
   border-radius: 0.4rem;
   text-decoration: none;
-
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
 }
 
 .btn-blue{
@@ -110,7 +143,7 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 1.6rem;
-  padding-top:;
-  
-
 }
+
+
+

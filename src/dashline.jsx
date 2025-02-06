@@ -9,7 +9,7 @@ export default function DashLine({ className, stroke = "currentColor", width = "
     stroke={stroke}
     width={width}
     height={height}
-    viewBox="-5.0 -10.0 110.0 135.0"
+    viewBox="0 0 100 125"
     xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M95.6,51.9H4.4c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9h91.3c1,0,1.9,0.8,1.9,1.9S96.7,51.9,95.6,51.9z"/>
