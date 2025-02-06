@@ -32,6 +32,14 @@ body {
   background-color: #fff;
 }
 
+.menu-grid__row-1{
+  
+}
+
+.menu_grid__row-1x{
+  border-bottom: 1px solid #e5e7;
+}
+
 /* Center section */
 .menu-grid__row-1:nth-child(2) {
   padding: 1.6rem 2.4rem;
@@ -40,6 +48,7 @@ body {
 .menu-grid__row-1 h1 {
   font-size: 1.8rem;
   color: #111827;
+  padding-bottom: ;
 }
 
 /* Right section */
@@ -82,4 +91,26 @@ body {
 
 .svg-icon:hover {
   color: #1D4ED8;
+}
+
+.message-hud{
+  
+}
+
+.btn {
+  padding: 1.5rem 8rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+  text-decoration: none;
+
+}
+
+.btn-blue{
+  background-color: #1D4ED8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding-top:;
+  
+
 }

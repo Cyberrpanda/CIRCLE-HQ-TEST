@@ -8,6 +8,7 @@ import DoubleBio from "./two-bios";
 import FileCopy from "./file-copy";
 import File from "./file";
 import Settings from "./settings";
+import Message from "./messages";
 
 export default function Menu() {
   return (
@@ -25,16 +26,18 @@ export default function Menu() {
             <Inbox className="svg-icon" />
             <Speaker className="svg-icon" />
             <Fblock className="svg-icon" />
-            <DoubleBio className="svg-icon" />
+            <DoubleBio className="svg-icon" height="30"/>
             <FileCopy className="svg-icon" />
             <File className="svg-icon" />
             <Settings className="svg-icon" />
           </div>
         </div>
         
-        <div className="menu-grid__row-1">
+        <div className="menu-grid__row-1 menu_grid__row-1x">
           <h1>Shared Inbox</h1>
+          <Message/>
         </div>
+        
         
         <div className="menu-grid__row-2">
           <div>

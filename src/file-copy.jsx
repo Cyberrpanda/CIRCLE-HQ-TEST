@@ -2,34 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-export default function FileCopy({ stroke = "currentColor", width = "24", height = "24" }) {
+export default function FileCopy({ className, stroke = "currentColor", width = "24", height = "24" }) {
     return (
         <svg 
-        xmlns="http://www.w3.org/2000/svg"
-        width="100" 
-        height="50" 
-        viewBox="0 0 100.000000 100.000000"
-        preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.10, written by Peter Selinger 2001-2011
-</metadata>
-<g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-fill="grey" stroke="none">
-<path d="M385 835 c-22 -21 -25 -33 -25 -100 l0 -75 -45 0 c-35 0 -52 -6 -70
--25 -25 -24 -25 -24 -25 -235 0 -277 -14 -260 210 -260 158 0 161 1 185 25 22
-21 25 33 25 100 l0 75 45 0 c35 0 52 6 70 25 24 23 25 29 25 167 l0 144 -52
-50 c-29 27 -74 69 -100 92 l-48 42 -85 0 c-78 0 -88 -2 -110 -25z m175 -67 c0
--100 9 -108 117 -108 l83 0 0 -130 c0 -117 -2 -132 -20 -150 -13 -13 -33 -20
--60 -20 l-40 0 0 58 c0 57 -1 59 -52 108 -118 112 -147 134 -178 134 l-30 0 0
-70 c0 57 4 74 20 90 16 16 33 20 90 20 l70 0 0 -72z m117 -86 c-89 -4 -97 3
--97 85 l0 64 83 -73 82 -73 -68 -3z m-257 -114 c0 -100 9 -108 117 -108 l83 0
-0 -130 c0 -177 7 -170 -190 -170 -204 0 -190 -18 -190 240 0 242 -1 240 110
-240 l70 0 0 -72z m117 -86 c-89 -4 -97 3 -97 85 l0 64 83 -73 82 -73 -68 -3z"/>
-<path d="M320 330 c0 -6 43 -10 110 -10 67 0 110 4 110 10 0 6 -43 10 -110 10
--67 0 -110 -4 -110 -10z"/>
-<path d="M320 250 c0 -6 43 -10 110 -10 67 0 110 4 110 10 0 6 -43 10 -110 10
--67 0 -110 -4 -110 -10z"/>
-</g>
+        className={className}
+        fill="grey"
+        stroke={stroke}
+        width={width}
+        height={height}
+        viewBox="-5.0 -10.0 110.0 135.0"
+        xmlns="http://www.w3.org/2000/svg">
+<path d="M51.02,0H15A6.006,6.006,0,0,0,9,6a6.006,6.006,0,0,0-6,6V58a6.006,6.006,0,0,0,6,6H45a6.006,6.006,0,0,0,6-6,6.006,6.006,0,0,0,6-6V5.98A5.987,5.987,0,0,0,51.02,0ZM49,58a4,4,0,0,1-4,4H9a4,4,0,0,1-4-4V12A4,4,0,0,1,9,8H31a5.688,5.688,0,0,1,4.246,1.906l12,13.5.007.008.006.006A6.887,6.887,0,0,1,49,28Zm6-6a4,4,0,0,1-4,4V28a8.881,8.881,0,0,0-2.246-5.906l-.747.664.74-.672L36.74,8.578A7.684,7.684,0,0,0,31,6H11a4,4,0,0,1,4-4H51.02A3.984,3.984,0,0,1,55,5.98Z"/>
+<path d="M42,33H11a1,1,0,0,0,0,2H42a1,1,0,0,0,0-2Z"/>
+<path d="M42,41H11a1,1,0,0,0,0,2H42a1,1,0,0,0,0-2Z"/>
+<path d="M42,49H11a1,1,0,0,0,0,2H42a1,1,0,0,0,0-2Z"/>
 </svg>
      
 
@@ -39,6 +25,7 @@ fill="grey" stroke="none">
 
 
   FileCopy.propTypes = {
+    className: PropTypes.string,
     stroke: PropTypes.string, 
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 

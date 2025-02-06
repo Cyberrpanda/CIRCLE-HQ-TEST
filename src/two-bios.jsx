@@ -1,46 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+export default function DoubleBio({ className, stroke = "currentColor", width = "24", height = "24" }) {
+  return (
+    <svg
+      className={className}
+      fill="grey"
+      stroke={stroke}
+      width={width}
+      height={height}
+      viewBox="-5.0 -10.0 110.0 135.0"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="m82.957 54.641c4.375-2.3789 7.457-6.5859 8.4023-11.473 0.94922-4.8867-0.33984-9.9414-3.5078-13.781-3.168-3.8398-7.8867-6.0625-12.867-6.0586-4.9766 0.003906-9.6953 2.2344-12.855 6.0781-3.1641 3.8477-4.4414 8.9023-3.4883 13.789 0.95703 4.8867 4.0469 9.0898 8.4258 11.457-1.5859 0.54297-3.1094 1.25-4.5469 2.1094-0.98828-1.2773-2.0625-2.4844-3.2148-3.6133-4.1562-4.0273-9.25-6.9531-14.816-8.5156 6.5664-2.9258 11.422-8.7148 13.152-15.695 1.7344-6.9805 0.15234-14.367-4.2891-20.023-4.4375-5.6602-11.238-8.9531-18.43-8.9297-7.1875 0.019531-13.969 3.3555-18.371 9.043-4.4062 5.6836-5.9414 13.082-4.168 20.051 1.7773 6.9688 6.668 12.727 13.254 15.613-7.4023 2.2266-13.895 6.7773-18.512 12.98s-7.1133 13.727-7.125 21.461v12.535c0.0039062 4.5977 3.7344 8.3281 8.332 8.332h85c3.6758 0 6.6602-2.9766 6.668-6.6484v-15.102c-0.003906-5.2266-1.6523-10.32-4.7109-14.555-3.0586-4.2383-7.375-7.4062-12.332-9.0547zm-21.289-14.641c0-5.3945 3.2461-10.254 8.2305-12.32 4.9805-2.0625 10.715-0.92188 14.531 2.8906 3.8125 3.8164 4.9531 9.5508 2.8906 14.531-2.0664 4.9844-6.9258 8.2305-12.32 8.2305-7.3594-0.007812-13.324-5.9727-13.332-13.332zm-46.668-16.668c0-5.3047 2.1055-10.391 5.8594-14.141 3.75-3.75 8.8359-5.8594 14.141-5.8594s10.391 2.1094 14.141 5.8594c3.7539 3.75 5.8594 8.8359 5.8594 14.141 0 5.3047-2.1055 10.395-5.8594 14.145-3.75 3.75-8.8359 5.8555-14.141 5.8555-5.3008-0.003906-10.387-2.1133-14.137-5.8633s-5.8594-8.832-5.8633-14.137zm41.668 73.336h-48.336c-2.7617 0-5-2.2383-5-5v-12.535c0-17.301 13.688-31.848 30.512-32.445 0.39062-0.011719 0.77734-0.019531 1.168-0.019531 8.3945 0 16.445 3.3398 22.383 9.2773s9.2734 13.992 9.2734 22.387v13.336c0 2.7617-2.2383 5-5 5zm40-3.3164c-0.011719 1.832-1.5 3.3164-3.3359 3.3164h-25.043c1.1055-1.4336 1.7031-3.1914 1.7109-5v-13.336c0.011719-6.6836-1.9102-13.23-5.5352-18.848 2.8906-1.6758 6.1445-2.6328 9.4805-2.7852 5.9102-0.30078 11.684 1.832 15.98 5.9062 4.293 4.0742 6.7305 9.7266 6.7422 15.645z"/>
+      
+    </svg>
+  );
+}
 
-export default function DoubleBio({ stroke = "currentColor", width = "24", height = "24" }) {
-    return (
-        <svg
-            fill="grey"
-            width="150"
-            height="170"
-            viewBox="0 0 210 297"
-            xmlns="http://www.w3.org/2000/svg"
-            ><defs
-            id="defs1" />
-            <g
-                id="layer1"><image
-                width="73"
-                height="79"
-                preserveAspectRatio="none"
-                style={{ imageRendering: 'optimizeQuality' }}
-                xlinkHref="data:image/png;base64,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&#10;YII=&#10;"
-                id="image1"
-                x="72.134003"
-                y="97.852234" />
-            </g>
-            
-        </svg>
-     
+DoubleBio.propTypes = {
+  className: PropTypes.string,
+  stroke: PropTypes.string,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
 
-
-    );
-  }
-
-
-  DoubleBio.propTypes = {
-    stroke: PropTypes.string, 
-    width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
-    height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
-  };
-  
-  
-  DoubleBio.defaultProps = {
-    stroke: "currentColor",
-    width: "24",
-    height: "24",
-  };  
+DoubleBio.defaultProps = {
+  stroke: "currentColor",
+  width: "24",
+  height: "24",
+};

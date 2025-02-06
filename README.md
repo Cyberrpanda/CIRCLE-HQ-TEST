@@ -8,6 +8,7 @@ I have tried a number of ways to make use of the svg icons in this project i tri
 i tried placing them all in a single component to import them from that export of said component (ran into some issues with type validation),mainly with trying to make use of vite-plugin-svgr (the primary issue was that react wasn't viewing the svg as a component ), i finally decided to place each svg icon in their individual components and import the exports from those components
 that seemed to be the solution for now,
 
+I've kept the same individual components approach but changed my source im now using thenounproject i find their icons more manipulable
 
 
 

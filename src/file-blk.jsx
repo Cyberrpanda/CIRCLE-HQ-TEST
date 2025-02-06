@@ -2,26 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-export default function Fblock({ stroke = "currentColor", width = "24", height = "24" }) {
+export default function Fblock({ className, stroke = "currentColor", width = "24", height = "24" }) {
     return (
         <svg  
-        xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="59"
-        viewBox="0 0 62.000000 74.000000"
-        preserveAspectRatio="xMidYMid meet">
+        className={className}
+        fill="grey"
+        stroke={stroke}
+        width={width}
+        height={height}
+        viewBox="-5.0 -10.0 110.0 135.0"
+        xmlns="http://www.w3.org/2000/svg">
 
-<g transform="translate(0.000000,74.000000) scale(0.100000,-0.100000)"
-fill="grey" stroke="none">
-<path d="M183 527 c-65 -24 -68 -34 -68 -182 0 -134 0 -135 28 -162 26 -27 32
--28 147 -31 141 -4 173 5 201 60 15 29 19 58 19 128 0 165 -28 194 -189 197
--65 2 -118 -2 -138 -10z m281 -42 c25 -28 26 -36 26 -141 0 -96 -3 -115 -20
--136 -49 -63 -286 -64 -327 -2 -10 15 -17 57 -20 121 -4 82 -1 104 14 133 28
-53 52 61 185 58 116 -3 117 -3 142 -33z"/>
-<path d="M230 400 c0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 -32 10 -75 10 -43
-0 -75 -4 -75 -10z"/>
-<path d="M233 288 c-2 -5 31 -8 73 -8 43 0 74 3 71 7 -10 9 -138 10 -144 1z"/>
-</g>
+<path d="m66.668 9.375h-33.336c-4.1445 0-8.1172 1.6445-11.047 4.5781-2.9297 2.9297-4.5781 6.9023-4.5781 11.047v50c0 4.1445 1.6484 8.1172 4.5781 11.047 2.9297 2.9336 6.9023 4.5781 11.047 4.5781h33.336c4.1445 0 8.1172-1.6445 11.047-4.5781 2.9297-2.9297 4.5781-6.9023 4.5781-11.047v-50c0-4.1445-1.6484-8.1172-4.5781-11.047-2.9297-2.9336-6.9023-4.5781-11.047-4.5781zm9.375 65.625c0 5.1758-4.1992 9.375-9.375 9.375h-33.336c-5.1758 0-9.375-4.1992-9.375-9.375v-50c0-5.1758 4.1992-9.375 9.375-9.375h33.336c5.1758 0 9.375 4.1992 9.375 9.375zm-22.918-20.832c-0.023438 1.7148-1.4102 3.1016-3.125 3.125h-16.668c-1.7227 0-3.125-1.4023-3.125-3.125 0-1.7266 1.4023-3.125 3.125-3.125h16.668c1.7148 0.019531 3.1016 1.4062 3.125 3.125zm16.668-18.75c-0.023438 1.7148-1.4102 3.1016-3.125 3.125h-33.336c-1.7227 0-3.125-1.4023-3.125-3.125 0-1.7266 1.4023-3.125 3.125-3.125h33.336c1.7148 0.019531 3.1016 1.4062 3.125 3.125z"/>
 </svg>
 
     );
@@ -29,6 +21,7 @@ fill="grey" stroke="none">
 
 
   Fblock.propTypes = {
+    className: PropTypes.string,
     stroke: PropTypes.string, 
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
