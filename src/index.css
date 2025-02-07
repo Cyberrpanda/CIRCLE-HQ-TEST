@@ -19,8 +19,7 @@ body {
 
 /* Left Sided Menu */
 .menu-grid__row {
-  display: grid;
-  grid-template-columns: 80px 1fr auto;
+  display: flex;
   width: 100%;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -28,6 +27,11 @@ body {
 .menu-grid__row-1 {
   display: flex;
   flex-direction: column;
+  width: 80px; 
+  height: 100vh;
+  padding: 1.6rem;
+  border-right: 1px solid #e5e7eb;
+  background-color: #fff;
 }
 
 .menu-grid__row-1:first-child {
@@ -123,14 +127,48 @@ body {
 }
 
 /* Center Area */
+.content-wrapper {
+  display: flex;
+  min-height: 500px; 
+}
+
 .main-content-area {
-  
+  flex: 1;
 }
 
 .message-area {
-  padding: 2.1rem;
+  flex-basis: 300px;
   height: 100vh;
+  padding: 2.1rem;
   border-right: 1px solid #e5e7eb; 
+}
+
+.new-section-1 {
+  flex-basis: 300px;
+  padding: 2.1rem; 
+  border: 1px solid #e5e7eb; 
+}
+
+.new-section-2{
+  flex-grow: 1;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.new-section-2 h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  font-weight: 500;
+}
+
+.new-section-2 h4 {
+  font-size: 1.2rem;
+  color: #6B7280;
+  font-weight: normal;
 }
 
 
@@ -167,4 +205,86 @@ body {
 
 .dropdown-menu__content a:hover {
   text-decoration: none;
+}
+
+
+/*MIddle Section*/
+.search-form input {
+  padding: 1.2rem 8rem;
+  border-radius: 1rem;
+}
+
+.search-input {
+  padding-left: 30px;
+  background-image: url("./assets/noun-search-3548595.svg"); 
+  background-repeat: no-repeat;
+  background-position: 5px center; 
+  background-size: 20px 20px; 
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 19px;
+}
+
+.options select{
+  padding:1rem;
+  border-radius: 1.5rem;
+}
+
+.messages{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.messages h3 {
+  font-size: 1.2rem;
+  color: #6B7280;
+  font-weight: normal;
+}
+
+.messages h4 {
+  font-size: 1.2rem;
+  color: #6B7280;
+  font-weight: normal;
+}
+
+.messages-1 span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messages-1 h3 {
+  padding: 4px;
+}
+
+.messages-1 h4 {
+  padding: 4px;
+}
+
+.right-items {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; 
+  }
+   .new-section-1, .new-section-2 {
+    display: none; 
+  }
+  .menu-2__1{
+    gap: 1rem;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-export default function Inbox({ className, stroke = "currentColor", width = "24", height = "24" }) {
+export default function Inbox({  className, stroke = "currentColor", width = "24", height = "24" }) {
     return (
         
 <svg 

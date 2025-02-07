@@ -19,17 +19,19 @@ import CheckedP from "./person-checked";
 import Check from "./check";
 import Star from "./star";
 import Sadd from "./singleadd";
+import Stars from "./stars";
+
 
 
 export default function Menu() {
 
   const [expandedSection, setExpandedSection] = useState("Primary");
-
+  
   const toggleSection = (section) => {
     setExpandedSection(expandedSection === section ? null : section);
   };
 
-
+  
   return (
     <div className="menu-grid">
       <div className="menu-grid__row">
@@ -61,9 +63,10 @@ export default function Menu() {
         {/*Center Page*/}
         <div className="main-content-area">
           <Header/>
+         
+          <div className="content-wrapper" style={{ display: "flex" }}>
           <section className="message-area">
             <Button/>
-            
             {["Primary", "Channel", "Direct Message", "Group Message", "Labels"].map((section) => (
               <div key={section} className="dropdown-menu">
                 <p className="btnd" onClick={() => toggleSection(section)}>
@@ -83,6 +86,68 @@ export default function Menu() {
                    </div>
                  ))}
           </section>
+
+            <section className="new-section-1"> 
+            <form  className="search-form"> 
+              <input
+                
+                type="text"
+                placeholder="Search..."
+                className="search-input"
+              />
+              <div className="options">
+              <select name="" id="">
+                <option value="0">Channel</option>
+                <option value="1"></option>
+              </select>
+
+              <select name="" id="">
+                <option value="0">Assigned to</option>
+                <option value="1"></option>
+              </select>
+              </div>
+            </form>
+
+            <div className="messages">
+            <div className="messages-1">
+              <span><h2>mistalogikk@gmail.com</h2> <div className="right-items">Now<Stars/></div> </span>
+              <h3>Havent gotten my refund</h3>
+              <h4>Hello vendor, I have shipped the product but haven...</h4>
+            </div>
+            <div className="messages-1">s
+              <span><h2>+234 (810) 234 5678</h2> <div className="right-items">Now<Stars/></div></span>
+              <h3>Havent gotten my refund</h3>
+              <h4>Hello vendor, I have shipped the product but haven...</h4>
+            </div>
+            <div className="messages-1">
+              <span><h2>israelajala@gmail.com</h2> <div className="right-items">Now<Stars/></div></span>
+              <h3>Havent gotten my refund</h3>
+              <h4>Hello vendor, I have shipped the product but haven...</h4>
+            </div>
+            <div className="messages-1">
+              <span><h2>+234 (810) 234 5678</h2> <div className="right-items">Now<Stars/></div></span> 
+              <h3>Havent gotten my refund</h3>
+              <h4>Hello vendor, I have shipped the product but haven...</h4>
+            </div>
+            <div className="messages-1">
+              <span><h2>mistalogikk@gmail.com</h2> <div className="right-items">Now<Stars/></div></span>
+              <h3>Havent gotten my refund</h3>
+              <h4>Hello vendor, I have shipped the product but haven...</h4>
+            </div>
+            </div>
+            </section>
+
+            <section className="new-section-2">
+                 <Chat/> 
+                 <h3>No Messages Selected</h3>
+                 <h4>Select a message to open conversation and get started</h4>
+            </section>
+
+          </div>
+          
+          
+
+          
         </div>
       </div>
     </div>
