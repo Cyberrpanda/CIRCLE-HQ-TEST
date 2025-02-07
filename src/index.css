@@ -1,4 +1,5 @@
-*{
+/* Base Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
   width: 100%;
 }
 
+/* Left Sided Menu */
 .menu-grid__row {
   display: grid;
   grid-template-columns: 80px 1fr auto;
@@ -23,6 +25,10 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.menu-grid__row-1 {
+  display: flex;
+  flex-direction: column;
+}
 
 .menu-grid__row-1:first-child {
   width: 80px;
@@ -32,15 +38,13 @@ body {
   background-color: #fff;
 }
 
-.menu-grid__row-1{
-
+.menu-logo {
+  width: 3.2rem;
+  height: auto;
 }
 
-.exempt {
-  
-}
-
-.menu-2{
+/* Header Component */
+.menu-2 {
   display: grid;
   grid-template-columns: 1fr auto;
   width: 100%;
@@ -54,7 +58,7 @@ body {
   color: #111827;
 }
 
-.menu-2__1{
+.menu-2__1 {
   display: flex;
   gap: 5rem;
   padding: 1.6rem 2.4rem;
@@ -74,42 +78,12 @@ body {
   font-weight: normal;
 }
 
-.menu-grid__row-1 h1 {
-  font-size: 1.8rem;
-  color: #111827;
-  padding-bottom: ;
-}
-
-
-.menu-grid__row-2 {
-  display: flex;
-  gap: 2rem;
-  padding: 1.6rem 2.4rem;
-  text-align: right;
-}
-
-.menu-grid__row-2 h3 {
-  font-size: 1.4rem;
-  color: #111827;
-  font-weight: 500;
-}
-
-.menu-grid__row-2 h4 {
-  font-size: 1.2rem;
-  color: #6B7280;
-  font-weight: normal;
-}
-
+/* SVG Styles */
 .menu-grid__annex {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
   margin-top: 3.2rem;
-}
-
-.menu-logo {
-  width: 3.2rem;
-  height: auto;
 }
 
 .svg-icon {
@@ -124,26 +98,73 @@ body {
   color: #1D4ED8;
 }
 
-.message-hud{
-
+.exempt {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: auto;
 }
 
+/* Button Styles */
 .btn {
-  padding: 1.5rem 8rem;
+  padding: 1.2rem 8rem;
   display: inline-block;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 8px; 
 }
 
-.btn-blue{
+.btn-blue {
   background-color: #1D4ED8;
   color: #fff;
   font-weight: 600;
   font-size: 1.6rem;
 }
 
+/* Center Area */
+.main-content-area {
+  
+}
+
+.message-area {
+  padding: 2.1rem;
+  height: 100vh;
+  border-right: 1px solid #e5e7eb; 
+}
 
 
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.btnd {
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dropdown-menu__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.dropdown-menu__content a {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dropdown-menu__content a:hover {
+  text-decoration: none;
+}
